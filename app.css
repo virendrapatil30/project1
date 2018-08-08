@@ -1,0 +1,225 @@
+
+html, body {
+    background-color: #fff;
+}
+
+.device {
+    width:  100%;
+    background-color: #fff;
+    border-radius: 12px 12px 12px 12px;
+    background: linear-gradient(to bottom, #404040  0%, #333333  49%, #282828 51%, #222222 100%);
+}
+
+.device .screen {
+    width:  100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.device .screen .page {
+    width:  100%;
+    height: 100%;
+    color:  white;
+    font-family: sans-serif;
+}
+
+.device .screen .page[data-jquery-page-name='11'] ,
+.device .screen .page[data-jquery-page-name='12'] ,
+.device .screen .page[data-jquery-page-name='21'] ,
+.device .screen .page[data-jquery-page-name='22'] ,
+.device .screen .page[data-jquery-page-name='XX'] {
+    background-color: #fff;
+}
+
+.device .screen .page .title {
+    width: 100%;
+    font-size: 20pt;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	font-family:'caviar_dreamsregular';
+	text-transform:uppercase;
+	background:red;
+	color: #fff!important;
+}
+
+.device .screen .page .navigate {
+    margin: 5px;
+    padding: 10px;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/*----Custom css-------*/
+
+.gologo{
+    color: white;
+    text-shadow: 1px 10px 40px #948e8e;
+	font-size:60px;
+	font-family:impact;
+	text-align:center;
+}
+
+/*----logo animated shadow-------*/
+.gologo{
+    animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 15s; /* Chrome and Safari */
+
+ }
+    @keyframes colorchange
+    {
+      10%   {text-shadow: 2px 2px 60px #000000;}
+      25%  {text-shadow: 2px 2px 60px red;}
+      50%  {text-shadow: 2px 2px 60px blue;}
+      75%  {text-shadow: 2px 2px 60px green;}
+      100% {text-shadow: 2px 2px 60px red;}
+
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+    10%   {text-shadow: 2px 2px 60px #000000;}
+      25%  {text-shadow: 2px 2px 60px red;}
+      50%  {text-shadow: 2px 2px 60px blue;}
+      75%  {text-shadow: 2px 2px 60px green;}
+      100% {text-shadow: 2px 2px 60px red;}
+
+    }
+
+/*----red color overlay-------*/
+
+.reveal {
+  width: 100%;
+  height: 150px;
+}
+
+@keyframes opening {
+    0% {
+         background:red;
+         height: 10px;
+    }
+    100% {
+background:red;
+ height: 150px;
+    }
+}
+
+
+
+.open {
+  animation-name: opening;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+.reveal {
+  animation-name: opening;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+/*header page 12*/
+
+.pageheader{
+	background:red;
+	height:150px;
+	text-align:center;
+}
+#button111{
+	margin-top:20%;
+}
+.theatrename{
+	text-align:left;
+	color:#000;
+	padding: 10px;
+    border-bottom: 1px solid red;
+}
+.theatrename img{
+	float:right;
+	padding-top:3px;
+}
+#theatrelist{
+	margin: 0px;
+    color: #fff;
+    padding: 0px;
+}
+
+.lds-heart {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  transform: rotate(45deg);
+  transform-origin: 32px 32px;
+	margin:0 auto;
+	top:30%;
+}
+.lds-heart div {
+  top: 23px;
+  left: 19px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: red;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: red;
+}
+.lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+#runningshowlist,#upcomingshowlist,#topten{
+	overflow:auto;
+}
+#done{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    margin: 20px auto;
+    text-align: center;
+	}
+.pac-item{
+	padding:5px!important;
+}
+.offline{
+	color:#000!important;
+}
